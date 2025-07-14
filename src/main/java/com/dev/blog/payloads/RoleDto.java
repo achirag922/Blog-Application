@@ -1,13 +1,10 @@
-package com.dev.blog.entities;
+package com.dev.blog.payloads;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
-public class Role {
-
-	@Id
+public class RoleDto {
+	
 	private int id;
+	
+	private String name;
 
 	public int getId() {
 		return id;
@@ -25,9 +22,4 @@ public class Role {
 		this.name = name;
 	}
 
-	public Role() {
-		super();
-	}
-
-	private String name;
 }

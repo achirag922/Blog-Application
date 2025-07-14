@@ -4,8 +4,6 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.dev.blog.entities.Comment;
-
 public class PostDto {
 
 	private String postTitle;

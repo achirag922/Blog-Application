@@ -1,5 +1,9 @@
 package com.dev.blog.payloads;
 
+import java.util.HashSet;
+import java.util.Set;
+
+
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
@@ -18,14 +22,17 @@ public class UserDto {
 	@NotEmpty
 	@Size(min = 4, max = 10, message = "Password should be more than 4 and less than 10 characters !!")
 	private String password;
-//	public UserDto(int id, String name, String email, String password, String about) {
-//		super();
-//		this.id = id;
-//		this.name = name;
-//		this.email = email;
-//		this.password = password;
-//		this.about = about;
-//	}
+
+	private Set<RoleDto> roles = new HashSet<>();
+
+
+	public Set<RoleDto> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(Set<RoleDto> roles) {
+		this.roles = roles;
+	}
 
 	@NotEmpty
 	private String about;
