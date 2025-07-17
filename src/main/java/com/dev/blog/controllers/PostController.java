@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.dev.blog.constants.AppConstants;
+import com.dev.blog.config.AppConstants;
 import com.dev.blog.payloads.ApiResponse;
 import com.dev.blog.payloads.PostDto;
 import com.dev.blog.payloads.PostResponse;

@@ -1,4 +1,4 @@
-package com.dev.blog.constants;
+package com.dev.blog.config;
 
 public class AppConstants {
 

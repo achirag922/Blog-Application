@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.dev.blog.constants.AppConstants;
+import com.dev.blog.config.AppConstants;
 import com.dev.blog.entities.Role;
 import com.dev.blog.entities.User;
 import com.dev.blog.payloads.UserDto;
